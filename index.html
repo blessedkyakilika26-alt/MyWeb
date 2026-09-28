@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liberty Bwalya - Personal Student Website</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <h1>Welcome to the world of web programming</h1>
+
+    <h2>Liberty Bwalya 202401399</h2>
+
+    <ul><li>gaming</li><li>reading</li><li>swimming</li></ul>
+
+    <p>Hello World! This is my first HTML document.</p>
+
+    <p>I am currently learning Introduction to Web Technologies</p>
+
+  <p>Computer Science Student | ICT251 Web Technologies</p>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#plan">Learning Plan</a>
+    <a href="#photos">Photos</a>
+    <a href="#media">Media</a>
+    <a href="#contact">Contact</a>
+    <a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank" rel="noopener noreferrer">MDN Web Docs</a>
+  </nav>
+
+  <!-- Main Content Area -->
+  <main>
+
+    <!-- About Me Section -->
+    <section id="about" class="content-section">
+      <h2>About Me</h2>
+      <p>
+        Hello! I am a dedicated student currently pursuing studies in ICT and Web Technologies. 
+        I have a strong passion for solving technical problems, exploring dynamic web applications, 
+        and building elegant, user-friendly digital tools. My goal is to master modern frontend and backend 
+        technologies so I can create impactful software solutions for real-world application.
+      </p>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="content-section">
+      <h2>My Hobbies</h2>
+      <ul>
+        <li>Software development and coding projects</li>
+        <li>Exploring cybersecurity and system testing</li>
+        <li>Listening to music and podcasts</li>
+      </ul>
+    </section>
+
+    <!-- Learning Plan Section -->
+    <section id="plan" class="content-section">
+      <h2>My Learning Plan</h2>
+      <p>Steps I am taking to improve my web development skills:</p>
+      <ol>
+        <li>Practice semantic HTML layout structuring daily.</li>
+        <li>Master responsive CSS layout design techniques (Flexbox and Grid).</li>
+        <li>Build interactive web applications using vanilla JavaScript.</li>
+      </ol>
+
+      <h3>Weekly Learning Schedule</h3>
+      <table>
+        <caption>Weekly Web Technology Learning Schedule</caption>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Topic</th>
+            <th>Practice Task</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>HTML5 & Page Structure</td>
+            <td>Build semantic forms and multimedia layouts</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>CSS Box Model & Styling</td>
+            <td>Design custom navigation bars and hover states</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>Responsive Layouts</td>
+            <td>Implement media queries and dynamic grids</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section id="photos" class="content-section">
+      <h2>My Photos</h2>
+      <div class="gallery">
+        <figure>
+          <img src="images/image 1.jpeg" alt="University campus environment where I study">
+          <figcaption>My university campus environment.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/image 2.jpeg" alt="My primary computer workspace setup">
+          <figcaption>My programming workspace setup.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/image 3.jpeg" alt="Technology workshop session with peers">
+          <figcaption>Attending a technology study session.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Media Section -->
+    <section id="media" class="content-section">
+      <h2>My Media</h2>
+
+      <!-- Video Player -->
+      <article class="media-item">
+        <h3>Self-Introduction Video</h3>
+        <video controls>
+          <source src="videos/video 5555.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p><strong>Video Transcript / Summary:</strong> " hello, my name is Blessed Kyakilika. I am enrooled in the ICT program, one key web development skill I hope to is to master is responsive, accessible modern web design."</p>
+      </article>
+<!-- Audio Player -->
+      <article class="media-item">
+        <h3>Audio Clip</h3>
+        <audio controls>
+          <source src="videos/voice.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <p>This short recording shares my interest in web technologies and how I plan to leverage programming to build digital tools.</p>
+      </article>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="content-section">
+      <h2>Contact Me</h2>
+      <p><em>Note: This contact form is for demonstration purposes only and does not submit data online.</em></p>
+     
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address: cooperbwalya289@gmail.com </label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="topic">Topic:</label>
+          <select id="topic" name="topic">
+            <option value="general">General Inquiry</option>
+            <option value="project">Project Collaboration</option>
+            <option value="feedback">Feedback</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Blessed Kyakilika. Built for ICT251 Web Technologies Activity 2.</p>
+  </footer>
+
+</body>
+</html>
+    
