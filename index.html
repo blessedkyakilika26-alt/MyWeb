@@ -3,70 +3,91 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Liberty Bwalya - Personal Student Website</title>
+  <title>Blessed Kyakilika | ICT251 Web Technologies</title>
+  <meta name="description" content="Personal website for Blessed Kyakilika, a Computer Science student learning web technologies.">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
 </head>
 <body>
+  <header class="site-header">
+    <nav class="top-nav container" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#projects">Projects</a>
+      <a href="#plan">Learning Plan</a>
+      <a href="#photos">Photos</a>
+      <a href="#media">Media</a>
+      <a href="#contact">Contact</a>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle theme" aria-pressed="false">Dark mode</button>
+    </nav>
 
-  <h1>Welcome to the world of web programming</h1>
+    <div class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow">ICT251 Web Technologies</p>
+        <h1>Blessed Kyakilika</h1>
+        <p class="intro">Computer Science student passionate about building accessible websites, solving real problems, and growing my digital skills through practical projects.</p>
+        <a class="btn-primary" href="#projects">View My Projects</a>
+      </div>
 
-    <h2>Liberty Bwalya 202401399</h2>
-
-    <ul><li>gaming</li><li>reading</li><li>swimming</li></ul>
-
-    <p>Hello World! This is my first HTML document.</p>
-
-    <p>I am currently learning Introduction to Web Technologies</p>
-
-  <p>Computer Science Student | ICT251 Web Technologies</p>
+      <aside class="hero-card" aria-label="Learning focus card">
+        <h2>Current focus</h2>
+        <ul>
+          <li>Semantic HTML structure</li>
+          <li>Responsive CSS design</li>
+          <li>Vanilla JavaScript interactivity</li>
+        </ul>
+      </aside>
+    </div>
   </header>
 
-  <!-- Navigation Bar -->
-  <nav>
-    <a href="#about">About Me</a>
-    <a href="#hobbies">Hobbies</a>
-    <a href="#plan">Learning Plan</a>
-    <a href="#photos">Photos</a>
-    <a href="#media">Media</a>
-    <a href="#contact">Contact</a>
-    <a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank" rel="noopener noreferrer">MDN Web Docs</a>
-  </nav>
-
-  <!-- Main Content Area -->
   <main>
-
-    <!-- About Me Section -->
-    <section id="about" class="content-section">
-      <h2>About Me</h2>
+    <section id="about" class="content-section container">
+      <p class="section-tag">About Me</p>
+      <h2>Student, builder, and problem-solver</h2>
       <p>
-        Hello! I am a dedicated student currently pursuing studies in ICT and Web Technologies. 
-        I have a strong passion for solving technical problems, exploring dynamic web applications, 
-        and building elegant, user-friendly digital tools. My goal is to master modern frontend and backend 
-        technologies so I can create impactful software solutions for real-world application.
+        Hello! I am Blessed Kyakilika, a Computer Science student currently studying web technologies at Mulungushi University. I enjoy learning how websites work behind the scenes, from clean HTML structure to responsive styling and interactive JavaScript. My goal is to build useful digital tools that are simple, professional, and accessible for real people. I like combining creativity with logic, especially when designing user-friendly interfaces and solving technical problems while improving my coding skills one step at a time.
       </p>
     </section>
 
-    <!-- Hobbies Section -->
-    <section id="hobbies" class="content-section">
-      <h2>My Hobbies</h2>
-      <ul>
-        <li>Software development and coding projects</li>
-        <li>Exploring cybersecurity and system testing</li>
-        <li>Listening to music and podcasts</li>
+    <section id="hobbies" class="content-section container">
+      <p class="section-tag">Hobbies</p>
+      <h2>What I enjoy</h2>
+      <ul class="feature-list">
+        <li>Programming and building small web projects</li>
+        <li>Playing football and staying active</li>
+        <li>Reading technology blogs and learning new ideas</li>
       </ul>
     </section>
 
-    <!-- Learning Plan Section -->
-    <section id="plan" class="content-section">
-      <h2>My Learning Plan</h2>
-      <p>Steps I am taking to improve my web development skills:</p>
-      <ol>
-        <li>Practice semantic HTML layout structuring daily.</li>
-        <li>Master responsive CSS layout design techniques (Flexbox and Grid).</li>
-        <li>Build interactive web applications using vanilla JavaScript.</li>
+    <section id="projects" class="content-section container">
+      <p class="section-tag">Projects & Skills</p>
+      <h2>What I have learned</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>HTML Structure</h3>
+          <p>Created semantic page sections, navigation, forms, and accessible multimedia layouts.</p>
+        </article>
+        <article class="project-card">
+          <h3>CSS Design</h3>
+          <p>Styled content with consistent spacing, alignment, color contrast, and mobile-friendly layouts.</p>
+        </article>
+        <article class="project-card">
+          <h3>JavaScript Interactions</h3>
+          <p>Added form validation, image browsing, theme switching, and expandable content sections.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="plan" class="content-section container">
+      <p class="section-tag">Learning Plan</p>
+      <h2>My study roadmap</h2>
+      <ol class="plan-list">
+        <li>Practice semantic HTML and meaningful page structure daily.</li>
+        <li>Improve responsive CSS skills using spacing, layout, and accessibility principles.</li>
+        <li>Build interactive interface features with JavaScript and test them carefully.</li>
       </ol>
 
-      <h3>Weekly Learning Schedule</h3>
+      <h3>Weekly practice schedule</h3>
       <table>
         <caption>Weekly Web Technology Learning Schedule</caption>
         <thead>
@@ -79,107 +100,117 @@
         <tbody>
           <tr>
             <td>Monday</td>
-            <td>HTML5 & Page Structure</td>
-            <td>Build semantic forms and multimedia layouts</td>
+            <td>HTML5 structure</td>
+            <td>Build semantic pages with clear sections and forms</td>
           </tr>
           <tr>
             <td>Wednesday</td>
-            <td>CSS Box Model & Styling</td>
-            <td>Design custom navigation bars and hover states</td>
+            <td>CSS layout and styling</td>
+            <td>Design attractive cards, navigation, and responsive layouts</td>
           </tr>
           <tr>
             <td>Friday</td>
-            <td>Responsive Layouts</td>
-            <td>Implement media queries and dynamic grids</td>
+            <td>JavaScript interaction</td>
+            <td>Create form logic and user-driven page updates</td>
           </tr>
         </tbody>
       </table>
     </section>
 
-    <!-- Photo Gallery Section -->
-    <section id="photos" class="content-section">
-      <h2>My Photos</h2>
-      <div class="gallery">
-        <figure>
-          <img src="images/image 1.jpeg" alt="University campus environment where I study">
-          <figcaption>My university campus environment.</figcaption>
-        </figure>
-        <figure>
-          <img src="images/image 2.jpeg" alt="My primary computer workspace setup">
-          <figcaption>My programming workspace setup.</figcaption>
-        </figure>
-        <figure>
-          <img src="images/image 3.jpeg" alt="Technology workshop session with peers">
-          <figcaption>Attending a technology study session.</figcaption>
-        </figure>
+    <section id="photos" class="content-section container">
+      <p class="section-tag">Photos</p>
+      <h2>My gallery</h2>
+
+      <div class="gallery-viewer" aria-live="polite">
+        <img id="gallery-image" src="images/image 1.jpeg" alt="Campus environment where I study">
+        <p id="gallery-caption">My university campus environment during a study week.</p>
+        <div class="gallery-actions">
+          <button type="button" id="prev-photo" class="secondary-btn">Previous</button>
+          <button type="button" id="next-photo" class="secondary-btn">Next</button>
+        </div>
       </div>
     </section>
 
-    <!-- Media Section -->
-    <section id="media" class="content-section">
-      <h2>My Media</h2>
+    <section id="media" class="content-section container">
+      <p class="section-tag">Media</p>
+      <h2>My media collection</h2>
 
-      <!-- Video Player -->
       <article class="media-item">
-        <h3>Self-Introduction Video</h3>
-        <video controls>
+        <h3>Self-introduction video</h3>
+        <video controls preload="metadata">
           <source src="videos/video 5555.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
-        <p><strong>Video Transcript / Summary:</strong> " hello, my name is Blessed Kyakilika. I am enrooled in the ICT program, one key web development skill I hope to is to master is responsive, accessible modern web design."</p>
+        <p><strong>Summary:</strong> Hello, my name is Blessed Kyakilika. I am enrolled in the ICT programme and I am learning how to build responsive, accessible, modern web pages.</p>
       </article>
-<!-- Audio Player -->
+
       <article class="media-item">
-        <h3>Audio Clip</h3>
-        <audio controls>
-          <source src="videos/voice.mp3" type="audio/mpeg">
+        <h3>Audio clip</h3>
+        <audio controls preload="metadata">
+          <source src="videos/voice.wav" type="audio/wav">
           Your browser does not support the audio element.
         </audio>
-        <p>This short recording shares my interest in web technologies and how I plan to leverage programming to build digital tools.</p>
+        <p>This short recording highlights my interest in web technologies and my goal of creating useful digital tools.</p>
       </article>
     </section>
 
-    <!-- Contact Form Section -->
-    <section id="contact" class="content-section">
-      <h2>Contact Me</h2>
-      <p><em>Note: This contact form is for demonstration purposes only and does not submit data online.</em></p>
-     
-      <form action="#" method="post">
-        <div class="form-group">
-          <label for="name">Full Name:</label>
-          <input type="text" id="name" name="name" required>
-        </div>
+    <section id="faq" class="content-section container">
+      <p class="section-tag">Questions</p>
+      <h2>Frequently asked questions</h2>
 
-        <div class="form-group">
-          <label for="email">Email Address: cooperbwalya289@gmail.com </label>
-          <input type="email" id="email" name="email" required>
+      <div class="faq-item">
+        <button class="faq-toggle" type="button" aria-expanded="false">What do I hope to learn next?</button>
+        <div class="faq-answer" hidden>
+          <p>I want to continue improving my JavaScript, responsive layout design, and full web application projects.</p>
         </div>
+      </div>
 
-        <div class="form-group">
-          <label for="topic">Topic:</label>
-          <select id="topic" name="topic">
-            <option value="general">General Inquiry</option>
-            <option value="project">Project Collaboration</option>
-            <option value="feedback">Feedback</option>
-          </select>
+      <div class="faq-item">
+        <button class="faq-toggle" type="button" aria-expanded="false">Why is web design important?</button>
+        <div class="faq-answer" hidden>
+          <p>Good web design makes websites easy to use, clear to understand, and professional for any audience.</p>
         </div>
-
-        <div class="form-group">
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-
-        <button type="submit" class="submit-btn">Send Message</button>
-      </form>
+      </div>
     </section>
 
+    <section id="contact" class="content-section container">
+      <p class="section-tag">Contact</p>
+      <h2>Contact Me</h2>
+      <p class="form-note">Browser demonstration only — no message is sent.</p>
+
+      <form id="contact-form" novalidate>
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+          <span id="name-error" class="error-message" aria-live="polite"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+          <span id="email-error" class="error-message" aria-live="polite"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <span id="message-error" class="error-message" aria-live="polite"></span>
+        </div>
+
+        <button type="submit" class="submit-btn">Validate form</button>
+      </form>
+
+      <p id="form-status" class="form-status" aria-live="polite"></p>
+      <p id="form-preview" class="form-preview" aria-live="polite"></p>
+    </section>
   </main>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2026 Blessed Kyakilika. Built for ICT251 Web Technologies Activity 2.</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Blessed Kyakilika</p>
+      <a href="https://github.com/blessedkyakilika26-alt/MyWeb" target="_blank" rel="noopener noreferrer">View Source on GitHub</a>
+    </div>
   </footer>
-
 </body>
 </html>
     
